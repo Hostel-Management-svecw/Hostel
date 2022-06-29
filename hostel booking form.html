@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    /**{
+      height: 100%;
+    }*/
+    body{
+      background-image: linear-gradient(to bottom right,yellow,blue,green);
+      background-repeat: no-repeat;
+      height: 100%;
+    }
+    h1{
+      box-shadow: 0 0 25px 0 whitesmoke;
+      color: white;
+    }
+    .form-group{
+      size: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1><center>Welcome to SVECW Student registration</center></h1><br><br>
+  <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="name">Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Reg.no">Registration number:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="Reg.no" placeholder="Enter registartion number" name="Reg.no">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email id:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="phn_number">Mobile number:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="phn_number" placeholder="Enter your mobile numebr" name="phn_number">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Fphn_number">Father Mobile number:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="Fphn_number" placeholder="Enter your father mobile numebr" name="Fphn_number">
+      </div>
+    </div>
+    <br>
+    <div class="form-group">    
+      <label for="sel1" >Select hostel:</label>
+        <select class="form-control" id="sel1" onchange="la(this.value)" >
+          <option>Select hostel</option>
+          <option>Green Meadows</option>
+          <option>Neelima</option>
+          <option>Raajeswari</option>
+          <option>Narmada</option>
+          <option>Rajyalakshmi</option>
+          <option>Vyshnavi</option>
+          <option value="rough3.html">Sadhana</option>
+          <option>Medha</option>
+        </select>
+     
+
+    </div>
+    <!-- <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+      </div>
+    </div> -->
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <center><button type="submit" class="btn btn-default" >Submit</button></center>
+      </div>
+    </div>
+   
+  </form>
+</div>
+<script type="text/javascript">
+  function la(src){
+    window.location = src;
+    window.location = src;
+  }
+</script>
+</body>
+</html>

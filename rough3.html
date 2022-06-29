@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 ;
+  padding: 0;
+  margin-top: 100px;
+}
+
+/*.container img {vertical-align: middle;}*/
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+header
+    {  
+      background-color: purple; 
+      color: white; 
+      position: fixed;  
+      left: 0;  
+      right: 0;  
+      top: 5px;  
+      height: 70px;  
+      display: flex;  
+      align-items: center;  
+      box-shadow: 0 0 25px 0 black;
+    }  
+    header * {  
+      display: inline;  
+    }  
+    header li  {  
+      color: white;  
+      text-decoration: none;
+      size: 500px;  
+      font-size: 25px;
+      margin: 20px;
+    } 
+    table-content{
+      font-size: 200x;
+    }
+    .container1{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            
+            justify-content: center;
+            
+        }
+        .btn{
+            padding: 10px 60px;
+            background: white;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: 500;
+            border-radius: 30px;
+        }
+        .popup{
+            width: 400px;
+            background: white;
+            border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(0.1);
+            text-align: center;
+            padding: 0 30px 30px;
+            color : darkslateblue;
+            visibility: hidden;
+            transition: transform 0.4s, top 0.4s;
+        }
+        .popup img{
+            width: 100px;
+            height: 100px;
+            margin-top: -50px;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgb(0, 0, 0);
+        } 
+        .popup h2{
+            font-size: 38px;
+            font-weight: 500;
+            margin: 30px 0 10px;
+        }
+        .open-popup{
+            visibility: visible;
+            top: 50%;
+            transform: translate(-50%,-50%) scale(1);
+        }
+        .popup button{
+            padding: 10px 60px;
+            font-size: 15px;
+            font-weight: 500;
+            border-radius: 30px;
+        }
+</style>
+</head>
+<body>
+<header>  
+    <nav>  
+      <ul>  
+        <li style="size: 100;text-shadow: 2px 4px 5px ghostwhite;">  
+         Welcome to SVECW Hostel Booking !
+        </li>    
+      </ul>  
+    </nav> 
+  </header>
+
+<div class="container">
+  <img src="Sadhana hostel.jpg" alt="Notebook" style="width:100%; height: 985px;">
+  <div class="content">
+    <h5
+          class="text-bottom text-center text-black"
+          style="/*font-family: 'Oswald', sans-serif;*/ ">
+          <center><u><h3 style="size: 500px; font-size: 25px;" >Sadhana Hostel : </h3></u> <br>
+          <p style="text-align: justify; font-size: 20px">Sadhana hostel is a very comfortable hostel in the college. It has a nice environment and also vey near to the mess and campus. It is a AC hostel consisting of 3 or 4 beded rooms. This hostel is mostly given to the 1st years. All the power bill will be paid by the management except AC and Geyser bill. The students have to pay those bills.</p><br>
+          <u><b>Hostel Rooms</b></u>
+          <div class="table-responsive">
+            <br>
+        <table cellpadding="25">
+            <tr>
+                <td>
+                  <ol >
+                    Room 1 :
+                    <li><input type="radio" name="Programming"> B1 </li>   
+                    <li><input type="radio" name="Programming"> B2 </li>
+                    <li><input type="radio" name="Programming"> B3 </li>
+                    <li><input type="radio" name="Programming"> B4 </li>
+                </ol>
+              </td>
+              <td>
+                  <ol>
+                    Room 2 :
+                    <li><input type="radio" name="Programming"> B1 </li>   
+                    <li><input type="radio" name="Programming"> B2 </li>
+                    <li><input type="radio" name="Programming"> B3 </li>
+                    <li><input type="radio" name="Programming"> B4 </li>
+                </ol>
+              </td>
+              <td>
+                  <ol>
+                    Room 3 :
+                    <li><input type="radio" name="Programming"> B1 </li>   
+                    <li><input type="radio" name="Programming"> B2 </li>
+                    <li><input type="radio" name="Programming"> B3 </li>
+                    <li><input type="radio" name="Programming"> B4 </li>
+                </ol>
+              </td>
+              <td>
+                  <ol>
+                    Room 4 :
+                    <li><input type="radio" name="Programming"> B1 </li>   
+                    <li><input type="radio" name="Programming"> B2 </li>
+                    <li><input type="radio" name="Programming"> B3 </li>
+                    <li><input type="radio" name="Programming"> B4 </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                  <ol>
+                    Room 5 :
+                    <li><input type="radio" name="Programming"> B1 </li>   
+                    <li><input type="radio" name="Programming"> B2 </li>
+                    <li><input type="radio" name="Programming"> B3 </li>
+                    <li><input type="radio" name="Programming"> B4 </li>
+                </ol>
+              </td>
+              <td>
+                  <ol>
+                    Room 6 :
+                    <li><input type="radio" name="Programming"> B1 </li>   
+                    <li><input type="radio" name="Programming"> B2 </li>
+                    <li><input type="radio" name="Programming"> B3 </li>
+                    <li><input type="radio" name="Programming"> B4 </li>
+                </ol>
+              </td>
+              <td>
+                  <ol>
+                    Room 7 :
+                    <li><input type="radio" name="Programming"> B1 </li>   
+                    <li><input type="radio" name="Programming"> B2 </li>
+                    <li><input type="radio" name="Programming"> B3 </li>
+                    <li><input type="radio" name="Programming"> B4 </li>
+                </ol>
+              </td>
+              <td>
+                  <ol>
+                    Room 8 :
+                    <li><input type="radio" name="Programming"> B1 </li>   
+                    <li><input type="radio" name="Programming"> B2 </li>
+                    <li><input type="radio" name="Programming"> B3 </li>
+                    <li><input type="radio" name="Programming"> B4 </li>
+                </ol>
+              </td>
+            </tr>
+        </table>
+    </div>
+    <div class="container1">
+        <input type="submit" class="btn" name="loginbutton" value="Submit" onclick="openPopup()" style="background-color: darkblue; color: white; width: 248px; height: 50px;">
+
+        <div class="popup" id="popup">
+            <img src="vishnu logo.jpg">
+            <h2>Thank you!</h2>
+            <p>Your details have been <br> successfully submitted.</p><br>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+        </h5>
+  </div>
+
+</center>
+</div>
+<script type="text/javascript">
+       
+        let popup = document.getElementById("popup")
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    
+    </script>
+</body>
+</html>
+
